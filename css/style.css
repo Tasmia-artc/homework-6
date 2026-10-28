@@ -1,0 +1,62 @@
+*{
+    padding:0;
+    margin: 0;
+}
+ul,ol,li,a{
+    list-style-type: none;
+    text-decoration: none;
+}
+.headerPart.container{
+    max-width: 1320px;
+    margin: 0 auto;
+   
+}
+.headerPart{
+    padding: 20px;
+     background:rgb(136, 67, 200);
+}
+.headerPart .container .menu ul{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.headerPart .container .menu ul li a{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .4s;
+     font-family: "Manrope", sans-serif;
+}
+.headerPart .container .menu ul li{
+    position: relative;
+}
+.headerPart .container .menu ul li a:hover{
+    color:rgb(214, 106, 106);
+}
+/* .headerPart .container .menu ul li a::after{
+ position: absolute;
+ content: "";
+ bottom: 0px;
+ left: 0;
+ height: 1px;
+ width:0;
+ background:white;
+ transition: .4s;
+
+} */
+/* .headerPart .container .menu ul li a:hover::after{
+    width: 100%;
+} */
+.headerPart .container .menu ul li .effect{
+    color: white;
+    position: absolute;
+    bottom: -15px;
+    left: 20px;
+    font-size:15px;
+    visibility: hidden;
+    transition: .4s;
+}
+.headerPart .container .menu ul li:hover .effect{
+    visibility: visible;
+    opacity:1;
+}
